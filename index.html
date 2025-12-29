@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>رسالة ليكي ❤️</title>
+
+<style>
+body {
+    background: linear-gradient(to bottom, #ffe6eb, #fff);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    direction: rtl;
+    padding: 40px;
+}
+
+h1 {
+    color: #c9184a;
+}
+
+#box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+button {
+    background: #c9184a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a4133c;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+    min-height: 60px;
+    color: #333;
+}
+</style>
+</head>
+
+<body>
+
+<h1>إلى أجمل حاجة في حياتي ❤️</h1>
+
+<div id="box">
+    <p id="message">اضغطي الزر وأنا هحكيلك حكايتنا…</p>
+    <button onclick="nextMessage()">اضغطي هنا</button>
+</div>
+
+<script>
+const messages = [
+    "فاكرة أول مرة اتكلمنا؟ من اللحظة دي وأنا قلبي اختارك.",
+    "ضحكتك كانت دايمًا سبب سعادتي حتى في أصعب الأيام.",
+    "كل ذكرى بينا محفورة جوايا ومش بنساها.",
+    "في وقت ما كنتي النور وأنا تايه.",
+    "أنا عمري ما فكرت في حد غيرك.",
+    "ومش هفضل أفكر غير فيك طول العمر.",
+    "بحبك… وهفضل أحبك ❤️"
+];
+
+let index = 0;
+
+function nextMessage() {
+    if (index < messages.length) {
+        document.getElementById("message").innerText = messages[index];
+        index++;
+    } else {
+        document.getElementById("message").innerText = "انتهت الرسالة… بس حبك لا ❤️";
+    }
+}
+</script>
+
+</body>
+</html>
